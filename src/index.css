@@ -3,6 +3,62 @@
 
 @font-face {
   font-family: 'PlusJakartaSans';
-  src: url('./assets/fonts/PlusJakartaSans-Regular.ttf'), url('./assets/fonts/PlusJakartaSans-ExtraBold.ttf');
+  src: url('./assets/fonts/PlusJakartaSans-Regular.ttf'); 
+}
+@font-face {
+  font-family: 'PlusJakartaSans';
+  src: url('./assets/fonts/PlusJakartaSans-ExtraBold.ttf');
 }
 @tailwind utilities;
+
+
+/* Headings */
+
+h1 {
+  @apply text-7xl leading-[6.125rem] tracking-normal font-extrabold;
+}
+
+h2 {
+  @apply text-5xl leading-[4rem] tracking-normal font-extrabold;
+}
+
+h3 {
+  @apply text-[2.5rem] leading-[3.375rem] tracking-normal font-extrabold;
+}
+
+h4 {
+  @apply text-[1.75rem] leading-10 tracking-normal font-extrabold;
+}
+
+h5 {
+  @apply text-2xl leading-8 font-semibold;
+}
+
+h6 {
+  @apply text-xl leading-[1.875rem] font-medium;
+}
+
+.subtitle-1 {
+  @apply text-lg leading-7 font-bold;
+}
+
+.subtitle-2 {
+  @apply text-lg leading-7 font-medium;
+}
+
+.lead-1 {
+  @apply text-lg leading-8;
+}
+
+.lead-2 {
+  @apply text-sm leading-6 font-medium;
+}
+
+.body-1 {
+  @apply leading-[1.625rem];
+}
+
+.body-2 {
+  @apply text-sm leading-[1.375rem];
+}
+
