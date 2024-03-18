@@ -5,10 +5,31 @@
   font-family: 'PlusJakartaSans';
   src: url('./assets/fonts/PlusJakartaSans-Regular.ttf'); 
 }
+
 @font-face {
   font-family: 'PlusJakartaSans';
+  font-weight: 800;
   src: url('./assets/fonts/PlusJakartaSans-ExtraBold.ttf');
 }
+
+@font-face {
+  font-family: 'PlusJakartaSans';
+  font-weight: 600;
+  src: url('./assets/fonts/PlusJakartaSans-SemiBold.ttf'); 
+}
+
+@font-face {
+  font-family: 'PlusJakartaSans';
+  font-weight: 500;
+  src: url('./assets/fonts/PlusJakartaSans-Medium.ttf');
+}
+
+@font-face {
+  font-family: 'PlusJakartaSans';
+  font-weight: 700;
+  src: url('./assets/fonts/PlusJakartaSans-Bold.ttf');
+}
+
 @tailwind utilities;
 
 
@@ -62,3 +83,22 @@ h6 {
   @apply text-sm leading-[1.375rem];
 }
 
+.label-large {
+  @apply text-xl leading-[1.875rem] font-semibold;
+}
+
+.label-medium {
+  @apply text-sm leading-5 font-semibold;
+}
+
+.label-small {
+  @apply text-xs leading-4 font-semibold;
+}
+
+.capitalised {
+  @apply text-sm leading-[1.125rem] font-extrabold;
+}
+
+.badge-label {
+  @apply text-xl leading-6;
+}
