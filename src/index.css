@@ -102,3 +102,7 @@ h6 {
 .badge-label {
   @apply text-xl leading-6;
 }
+
+button {
+  @apply hover:opacity-40 transition ease-in-out;
+}
