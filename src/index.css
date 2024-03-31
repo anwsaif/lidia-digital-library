@@ -104,5 +104,11 @@ h6 {
 }
 
 button {
-  @apply hover:opacity-40 transition ease-in-out;
+  @apply hover:opacity-40 transition ease-in-out duration-300; 
+}
+
+
+nav li {
+  @apply hover:text-link-active transition ease-in-out duration-300;
+
 }
