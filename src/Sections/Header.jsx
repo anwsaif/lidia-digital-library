@@ -36,7 +36,6 @@ const Header = () => {
       <div className="container mx-auto p-2">
         <div className="flex items-center justify-between">
           <div className="z-50" >
-
           <Hamburger onToggle={onHamburgerClickHandler} toggled={isOpen} toggle={setOpen} size={24} />
           </div>
           <img src={logo} alt="Lidia"/>
