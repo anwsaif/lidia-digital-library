@@ -33,14 +33,14 @@ const Navbar = () => {
 
   return (
     <header>
-      <div className="container mx-auto p-2">
-        <div className="flex items-center justify-between md:p-3">
+      <div className="container mx-auto p-2 lg:px-24 lg:py-14">
+        <div className="flex items-center justify-between md:p-3 lg:gap-28">
           <div className="z-50 md:hidden" >
           <Hamburger onToggle={onHamburgerClickHandler} toggled={isOpen} toggle={setOpen} size={24} />
           </div>
           <img src={logo} alt="Lidia"/>
           <nav className='absolute left-0 top-0 hidden h-screen w-screen items-center justify-center bg-white opacity-0 transition duration-300 ease-in-out md:static md:left-auto md:top-auto md:flex md:h-auto md:w-auto md:opacity-100'>
-            <ul className='flex flex-col justify-between gap-6 md:flex-row'>
+            <ul className='flex flex-col justify-between gap-6 md:flex-row lg:gap-10'>
               <li>
                 <a href="#features" onClick={onNavLinkClickHandler}>Features</a></li>
               <li>
@@ -51,7 +51,7 @@ const Navbar = () => {
                 <a href="#location">Location</a></li>
             </ul>
           </nav>
-          <button className='rounded-[0.625rem] md:bg-white'>
+          <button className='rounded-[0.625rem] md:bg-white lg:ml-auto'>
             <FeatherIcon icon='log-in' className='mr-2 md:hidden' />
             <span className='mx-12 my-2 hidden font-bold leading-6 text-heading md:block'>Login</span>
           </button>
