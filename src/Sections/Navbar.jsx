@@ -3,7 +3,7 @@ import { useEffect, useRef, useState } from 'react'
 import logo from '../assets/images/logo/Logo.svg'
 import FeatherIcon from 'feather-icons-react'
 
-const Header = () => {
+const Navbar = () => {
   const [isOpen, setOpen] = useState(false)
 
   const [nav, setNav] = useState(null)
@@ -61,4 +61,4 @@ const Header = () => {
   )
 }
 
-export default Header
+export default Navbar

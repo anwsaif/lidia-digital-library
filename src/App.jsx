@@ -1,11 +1,11 @@
 import { useState } from 'react'
-import Header from './Sections/Header'
+import Navbar from './Sections/Navbar'
 
 function App() {
 
   return (
     <>
-      <Header />
+      <Navbar />
     </>
   )
 }
