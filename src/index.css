@@ -109,6 +109,6 @@ button {
 
 
 nav li {
-  @apply hover:text-link-active transition ease-in-out duration-300;
+  @apply text-link-inactive hover:text-link-active transition ease-in-out duration-300;
 
 }
