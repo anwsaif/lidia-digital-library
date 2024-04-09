@@ -39,7 +39,7 @@ const Navbar = () => {
           <Hamburger onToggle={onHamburgerClickHandler} toggled={isOpen} toggle={setOpen} size={24} />
           </div>
           <img src={logo} alt="Lidia"/>
-          <nav className='absolute left-0 top-0 hidden h-screen w-screen items-center justify-center bg-white opacity-0 transition duration-300 ease-in-out md:static md:left-auto md:top-auto md:flex md:h-auto md:w-auto md:opacity-100'>
+          <nav className='absolute left-0 top-0 z-10 hidden h-screen w-screen items-center justify-center bg-white opacity-0 transition duration-300 ease-in-out md:static md:left-auto md:top-auto md:flex md:h-auto md:w-auto md:bg-transparent md:opacity-100'>
             <ul className='flex flex-col justify-between gap-6 md:flex-row lg:gap-10'>
               <li>
                 <a href="#features" onClick={onNavLinkClickHandler}>Features</a></li>

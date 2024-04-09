@@ -9,6 +9,9 @@ export default {
       fontFamily: {
         'sans': ['"PlusJakartaSans"', 'monospace']
       },
+      borderRadius: {
+        10: '0.625rem',
+      },
       colors: {
         link: {
           active: "#4737FF",
