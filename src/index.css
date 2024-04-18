@@ -40,7 +40,7 @@ h1 {
 }
 
 h2 {
-  @apply text-5xl leading-[4rem] tracking-normal font-extrabold;
+  @apply text-xl xl:text-5xl leading-[4rem] tracking-normal font-extrabold;
 }
 
 h3 {
@@ -96,7 +96,7 @@ h6 {
 }
 
 .capitalised {
-  @apply text-sm leading-[1.125rem] font-extrabold;
+  @apply md:text-sm leading-[1.125rem] font-extrabold;
 }
 
 .badge-label {
