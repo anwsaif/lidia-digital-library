@@ -2,7 +2,6 @@ import { Divide as Hamburger } from 'hamburger-react'
 import { useEffect, useRef, useState } from 'react'
 import logo from '../assets/images/logo/Logo.svg'
 import FeatherIcon from 'feather-icons-react'
-import Cover from '../assets/Cover.svg'
 
 const Navbar = () => {
   const [isOpen, setOpen] = useState(false)
@@ -34,12 +33,12 @@ const Navbar = () => {
 
   return (
     <header className='bg-white bg-opacity-80 backdrop-blur-lg lg:bg-transparent lg:backdrop-blur-0'>
-      <div className="container mx-auto p-2 xl:px-24 xl:py-7">
-        <div className="flex items-center justify-between md:p-3 lg:gap-4 xl:gap-12 2xl:gap-28">
+      <div className="container mx-auto p-2 xl:px-10 xl:py-7">
+        <div className="flex items-center justify-between md:p-3 lg:gap-4 lg:px-0 xl:gap-12 2xl:gap-28">
           <div className="z-50 lg:hidden" >
           <Hamburger onToggle={onHamburgerClickHandler} toggled={isOpen} toggle={setOpen} size={24} />
           </div>
-          <img src={logo} alt="Lidia" className='rounded-[1.25rem] px-[0.625rem] py-2'/>
+          <img src={logo} alt="Lidia" className='rounded-[1.25rem] px-[0.625rem] py-2 lg:px-0'/>
           <nav className='absolute left-0 top-0 z-10 hidden h-screen w-screen items-center justify-center bg-white opacity-0 transition duration-300 ease-in-out lg:static lg:left-auto lg:top-auto lg:flex lg:h-auto lg:w-auto lg:bg-transparent lg:opacity-100'>
             <ul className='flex flex-col justify-between gap-6 lg:flex-row lg:gap-10'>
               <li>
