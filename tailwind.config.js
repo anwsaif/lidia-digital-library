@@ -24,17 +24,11 @@ export default {
         border: "#DEDEDE"
       },
       dropShadow: {
-        extrabold: {
-          dark: "filter: drop-shadow(0 30px 60px rgb(71 74 87 / 0.25));"
-        },
-        bold: {
-          dark: "filter: drop-shadow(0 15px 30px rgb(0 0 0 / 0.25));",
-          primary: "filter: drop-shadow(0 30px 60px rgb(68, 117, 242 / 0.25));"
-        },
-        normal: {
-          dark: "filter: drop-shadow(0 15px 30px rgb(0 0 0 / 0.1));",
-          primary: "filter: drop-shadow(0 15px 30px rgb(68, 117, 242 / 0.1));"
-        }
+        "extrabold-dark":'0 30px 60px rgba(71, 74, 87, 0.25)',
+        "bold-dark":'0 15px 30px rgba(0, 0, 0, 0.25)',
+        "bold-primary": '0 30px 60px rgba(68, 117, 242, 0.25)',
+        "normal-dark": '0 15px 30px rgba(0, 0, 0, 0.1)',
+        "normal-primary": '0 15px 30px rgba(68, 117, 242, 0.1)'
       }
     },
   },
