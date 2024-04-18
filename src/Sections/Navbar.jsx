@@ -35,7 +35,6 @@ const Navbar = () => {
   return (
     <header className='bg-white bg-opacity-80 backdrop-blur-lg lg:bg-transparent lg:backdrop-blur-0'>
       <div className="container mx-auto p-2 xl:px-24 xl:py-7">
-        {/* <img src={Cover} alt="Cover" className='absolute -right-16 top-0 -z-[9999] transition ease-in-out 2xl:right-0'/> */}
         <div className="flex items-center justify-between md:p-3 lg:gap-4 xl:gap-12 2xl:gap-28">
           <div className="z-50 lg:hidden" >
           <Hamburger onToggle={onHamburgerClickHandler} toggled={isOpen} toggle={setOpen} size={24} />
