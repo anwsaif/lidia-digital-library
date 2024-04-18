@@ -37,12 +37,12 @@ const Navbar = () => {
       <div className="container mx-auto p-2 xl:px-24 xl:py-7">
         {/* <img src={Cover} alt="Cover" className='absolute -right-16 top-0 -z-[9999] transition ease-in-out 2xl:right-0'/> */}
         <div className="flex items-center justify-between md:p-3 lg:gap-12 xl:gap-28">
-          <div className="z-50 md:hidden" >
+          <div className="z-50 lg:hidden" >
           <Hamburger onToggle={onHamburgerClickHandler} toggled={isOpen} toggle={setOpen} size={24} />
           </div>
           <img src={logo} alt="Lidia" className='rounded-[1.25rem] px-[0.625rem] py-2'/>
-          <nav className='absolute left-0 top-0 z-10 hidden h-screen w-screen items-center justify-center bg-white opacity-0 transition duration-300 ease-in-out md:static md:left-auto md:top-auto md:flex md:h-auto md:w-auto md:bg-transparent md:opacity-100'>
-            <ul className='flex flex-col justify-between gap-6 md:flex-row lg:gap-10'>
+          <nav className='absolute left-0 top-0 z-10 hidden h-screen w-screen items-center justify-center bg-white opacity-0 transition duration-300 ease-in-out lg:static lg:left-auto lg:top-auto lg:flex lg:h-auto lg:w-auto lg:bg-transparent lg:opacity-100'>
+            <ul className='flex flex-col justify-between gap-6 lg:flex-row lg:gap-10'>
               <li>
                 <a href="#features" onClick={onNavLinkClickHandler}>Features</a></li>
               <li>
@@ -53,9 +53,9 @@ const Navbar = () => {
                 <a href="#location">Location</a></li>
             </ul>
           </nav>
-          <button className='rounded-[0.625rem] md:bg-white lg:ml-auto'>
-            <FeatherIcon icon='log-in' className='mr-2 md:hidden' />
-            <span className='mx-12 my-2 hidden font-bold leading-6 text-heading md:block'>Login</span>
+          <button className='rounded-[0.625rem] lg:ml-auto lg:bg-white'>
+            <FeatherIcon icon='log-in' className='mr-2 lg:hidden' />
+            <span className='mx-12 my-2 hidden font-bold leading-6 text-heading lg:block'>Login</span>
           </button>
         </div>
       </div>
