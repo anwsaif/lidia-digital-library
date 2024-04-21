@@ -1,6 +1,7 @@
 import Navbar from './Sections/Navbar'
 import Hero from './Sections/Hero'
 import Features from './Sections/Features'
+import Services from './Sections/Services'
 
 function App() {
 
@@ -12,6 +13,7 @@ function App() {
         <Hero />
       </div>
       <Features />
+      <Services />
     </>
   )
 }
