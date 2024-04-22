@@ -32,7 +32,7 @@ function Features() {
 
           <div className="flex flex-wrap justify-around gap-6 lg:gap-x-28 xl:justify-between">
             {features.map(({logo, title, description, index}) => {
-              return <Feature logo={logo} title={title} description={description} className='mt-4 lg:mt-20' />
+              return <Feature key={index} logo={logo} title={title} description={description} className='mt-4 lg:mt-20' />
             })}
           </div>
         </div>

@@ -48,7 +48,7 @@ h3 {
 }
 
 h4 {
-  @apply text-[1.75rem] leading-10 tracking-normal font-extrabold;
+  @apply text-[1.375rem] md:text-[1.625rem] lg:text-[1.75rem] lg:leading-10 tracking-normal font-extrabold;
 }
 
 h5 {
@@ -116,3 +116,23 @@ nav li {
 .text-desc-base {
   @apply text-sm text-desc md:text-base;
 }
+
+#services h4 {
+  @apply font-medium mb-5 md:mb-10;
+}
+
+#services h4 ~ p:empty {
+  @apply min-h-4;
+}
+
+#services h4 ~ p {
+  @apply text-desc-base font-medium;
+}
+
+#services h4 > span {
+  @apply text-primary;
+}
+
+#services h2 ~ div > div:nth-child(2) {
+  @apply !flex-row-reverse;
+} 
