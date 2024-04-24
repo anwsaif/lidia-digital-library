@@ -2,6 +2,7 @@ import Navbar from './Sections/Navbar'
 import Hero from './Sections/Hero'
 import Features from './Sections/Features'
 import Services from './Sections/Services'
+import Reviews from './Sections/Reviews'
 
 function App() {
 
@@ -14,6 +15,7 @@ function App() {
       </div>
       <Features />
       <Services />
+      <Reviews />
     </>
   )
 }
