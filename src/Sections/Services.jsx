@@ -23,11 +23,11 @@ function Services() {
           <span className='capitalised text-xs text-primary'>SERVICES</span>
           <h2>🚀• The Services for You</h2>
 
-          <div className="flex flex-col gap-16 lg:mt-[5.625rem]">
+          <div className="flex flex-col gap-16 lg:mt-[5.625rem] xl:gap-[8.75rem]">
             {services.map(({ logo, title, description }) => {
               return <div className="flex flex-wrap justify-between gap-9 lg:flex-nowrap">
                 <img src={logo} alt={title} className='w-full self-center rounded-[0.625rem] drop-shadow-extrabold-dark md:w-1/2 lg:w-1/2 lg:max-w-[37.5rem] xl:max-w-[45%]'/>
-                <div className="md:max-w-[45%] lg:w-1/2 xl:mt-16">
+                <div className="md:max-w-[45%] lg:w-1/2 2xl:mt-16">
                   {title}
                   <p className='line-clamp-4 h-fit w-fit lg:line-clamp-none' onClick={e => e.target.classList.remove('line-clamp-4')}>
                     {description.split('\n').map((line, i) => (<>{line}<br/> </>))}
