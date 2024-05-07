@@ -145,4 +145,5 @@ nav li {
           drop-shadow(0 6.65px 5.32px rgba(0,0,0,0.0283))
           drop-shadow(0 2.77px 2.21px rgba(0,0,0,0.0197))
     ;
+  @apply font-medium text-sm lg:text-base;
 }
