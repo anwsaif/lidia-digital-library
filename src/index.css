@@ -136,3 +136,13 @@ nav li {
 #services h2 ~ div > div:nth-child(2) {
   @apply !flex-row-reverse;
 } 
+
+.review {
+  filter: drop-shadow(0 100px 80px rgba(0,0,0,0.07))
+          drop-shadow(0 41.78px 33.42px rgba(0,0,0,0.0503))
+          drop-shadow(0 22.34px 17.87px rgba(0,0,0,0.0417))
+          drop-shadow(0 12.52px 10.02px rgba(0,0,0,0.035))
+          drop-shadow(0 6.65px 5.32px rgba(0,0,0,0.0283))
+          drop-shadow(0 2.77px 2.21px rgba(0,0,0,0.0197))
+    ;
+}
