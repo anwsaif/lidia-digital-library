@@ -35,7 +35,7 @@ function Reviews() {
           <span className='capitalised text-xs text-primary'>REVIEWS</span>
           <h2>💬• Reviews of Others</h2>
 
-          <div className="flex flex-wrap justify-center gap-[3.1875rem] lg:mt-[5.625rem] ">
+          <div className="flex flex-wrap justify-center gap-9 lg:gap-[3.1875rem] xl:mt-[5.625rem] 2xl:justify-around ">
             {reviews.map((data) => {
               return <Review logo={data.logo} name={data.name} review={data.review} occupation={data.occupation} /> 
             })}
