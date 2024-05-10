@@ -23,7 +23,7 @@ function Services() {
           <span className='capitalised text-xs text-primary'>SERVICES</span>
           <h2>🚀• The Services for You</h2>
 
-          <div className="flex flex-col gap-16 lg:mt-[5.625rem] xl:gap-[8.75rem]">
+          <div className="flex flex-col gap-16 lg:mt-12 xl:mt-[5.625rem] xl:gap-[8.75rem]">
             {services.map(({ logo, title, description }) => {
               return <div className="flex flex-wrap justify-between gap-9 lg:flex-nowrap">
                 <img src={logo} alt={title} className='w-full self-center rounded-[0.625rem] drop-shadow-extrabold-dark md:w-1/2 lg:w-1/2 lg:max-w-[37.5rem] xl:max-w-[45%]'/>
