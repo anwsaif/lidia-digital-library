@@ -27,10 +27,15 @@ function Footer() {
               </a>
             </div>
           </div>
-          <div className="flex flex-col gap-4 lg:items-center lg:gap-14">
+          <div className="flex flex-col gap-4 lg:items-center lg:gap-[3.75rem]">
             <span className='subtitle-1 lg:text-2xl'>Slogan</span>
             <h6>#RentFavBooks</h6>
           </div>
+        </div>
+      </div>
+      <div className="bg-primary text-white">
+        <div className="container mx-auto py-6 lg:py-12">
+          <span className='block w-full text-center text-xs font-bold lg:text-sm'>© 2024 Lidia. All rights reserved.</span>
         </div>
       </div>
     </footer>
