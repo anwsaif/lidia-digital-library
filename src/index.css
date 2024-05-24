@@ -1,6 +1,9 @@
 @tailwind base;
 @tailwind components;
 
+html{
+  @apply scroll-smooth;
+}
 @font-face {
   font-family: 'PlusJakartaSans';
   src: url('./assets/fonts/PlusJakartaSans-Regular.ttf'); 

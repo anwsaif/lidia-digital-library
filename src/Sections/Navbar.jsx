@@ -37,7 +37,9 @@ const Navbar = () => {
           <div className="z-50 lg:hidden" >
           <Hamburger onToggle={onHamburgerClickHandler} toggled={isOpen} toggle={setOpen} size={24} />
           </div>
-          <img src={logo} alt="Lidia" className='rounded-[1.25rem] px-[0.625rem] py-2 lg:px-0'/>
+          <a href="/" title='Home Page' className='hover:opacity-100'>
+            <img src={logo} alt="Lidia" className='rounded-[1.25rem] px-[0.625rem] py-2 lg:px-0'/>
+          </a>
           <nav className='absolute left-0 top-0 z-10 hidden h-screen w-screen items-center justify-center bg-white opacity-0 transition duration-300 ease-in-out lg:static lg:left-auto lg:top-auto lg:flex lg:h-auto lg:w-auto lg:bg-transparent lg:opacity-100'>
             <ul className='flex flex-col justify-between gap-6 lg:flex-row lg:gap-10'>
               <li>
@@ -50,7 +52,7 @@ const Navbar = () => {
                 <a href="#location">Location</a></li>
             </ul>
           </nav>
-          <button className='rounded-[0.625rem] lg:ml-auto lg:bg-white'>
+          <button className='rounded-[0.625rem] lg:ml-auto lg:bg-white' title='Login'>
             <FeatherIcon icon='log-in' className='mr-2 lg:hidden' />
             <span className='mx-12 my-2 hidden font-bold leading-6 text-heading lg:block'>Login</span>
           </button>

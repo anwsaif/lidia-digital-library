@@ -24,7 +24,7 @@ const features = [
 
 function Features() {
   return (
-    <section className='2xl:mt-96'>
+    <section id='features' className='2xl:mt-96'>
       <div className="container mx-auto my-12 px-4 py-2 md:px-4 lg:my-[6.25rem] lg:px-5 lg:py-7 xl:px-10">
         <div className="flex w-full flex-col gap-4">
           <span className='capitalised text-xs text-primary'>FEATURES</span>
