@@ -10,6 +10,7 @@ import { useEffect } from 'react'
 // animation on scroll
 import AOS from 'aos'
 import 'aos/dist/aos.css'
+import Login from './Pages/Login'
 // import 'aos/dist'
 
 function App() {
@@ -19,13 +20,14 @@ function App() {
 
   return (
     <>
-      <Navbar/>
-      <Hero/>
-      <Features />
-      <Services />
-      <Reviews />
-      <Location />
-      <Footer />
+      <Login />
+      {/* <Navbar/> */}
+      {/* <Hero/> */}
+      {/* <Features /> */}
+      {/* <Services /> */}
+      {/* <Reviews /> */}
+      {/* <Location /> */}
+      {/* <Footer /> */}
     </>
   )
 }
