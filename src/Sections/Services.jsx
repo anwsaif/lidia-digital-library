@@ -17,17 +17,17 @@ const services = [
 
 function Services() {
   return (
-    <section data-aos="fade-up" className='2xl:mt-96' id='services'>
+    <section data-aos="fade-up" data-aos-duration="1500" className='2xl:mt-96' id='services'>
       <div className="container mx-auto my-12 px-4 py-2 md:px-4 lg:my-[6.25rem] lg:px-5 lg:py-7 xl:px-10">
         <div className="flex w-full flex-col gap-4 ">
-          <span className='capitalised text-xs text-primary'>SERVICES</span>
-          <h2>🚀• The Services for You</h2>
+          <span data-aos="fade-up" className='capitalised text-xs text-primary'>SERVICES</span>
+          <h2 data-aos="fade-up" data-aos-duration="1300">🚀• The Services for You</h2>
 
           <div className="flex flex-col gap-16 lg:mt-12 xl:mt-[5.625rem] xl:gap-[8.75rem]">
             {services.map(({ logo, title, description }) => {
               return <div className="flex flex-wrap justify-between gap-9 lg:flex-nowrap">
-                <img src={logo} alt={title} className='w-full self-center rounded-[0.625rem] drop-shadow-extrabold-dark md:w-1/2 lg:w-1/2 lg:max-w-[37.5rem] xl:max-w-[45%]'/>
-                <div className="md:max-w-[45%] lg:w-1/2 2xl:mt-16">
+                <img data-aos="fade-right" src={logo} alt={title} className='w-full self-center rounded-[0.625rem] drop-shadow-extrabold-dark md:w-1/2 lg:w-1/2 lg:max-w-[37.5rem] xl:max-w-[45%]'/>
+                <div data-aos="fade-left" className="md:max-w-[45%] lg:w-1/2 2xl:mt-16">
                   {title}
                   <p className='line-clamp-4 h-fit w-fit lg:line-clamp-none' onClick={e => e.target.classList.remove('line-clamp-4')}>
                     {description.split('\n').map((line, i) => (<>{line}<br/> </>))}
