@@ -19,8 +19,8 @@ function App() {
 
   return (
     <>
-      <Navbar data-aos="fade-zoom-in"/>
-      <Hero data-aos="fade-up"/>
+      <Navbar/>
+      <Hero/>
       <Features />
       <Services />
       <Reviews />
