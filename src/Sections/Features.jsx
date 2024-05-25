@@ -28,11 +28,11 @@ function Features() {
       <div className="container mx-auto my-12 px-4 py-2 md:px-4 lg:my-[6.25rem] lg:px-5 lg:py-7 xl:px-10">
         <div className="flex w-full flex-col gap-4">
           <span data-aos="fade-up" className='capitalised text-xs text-primary'>FEATURES</span>
-          <h2 data-aos="fade-up">🤔• What You Can Do?</h2>
+          <h2 data-aos="fade-up" data-aos-duration="1300">🤔• What You Can Do?</h2>
 
           <div className="flex flex-wrap justify-around gap-6 lg:gap-x-28 xl:justify-between">
-            {features.map(({logo, title, description, index}) => {
-              return <Feature key={index} logo={logo} title={title} description={description} className='mt-4 lg:mt-20' />
+            {features.map(({logo, title, description},index) => {
+              return <Feature key={index} logo={logo} title={title} description={description} className='mt-4 lg:mt-20'/>
             })}
           </div>
         </div>
