@@ -1,12 +1,12 @@
 import React from 'react'
 import Left from '../assets/images/Left.png'
 
-function Hero() {
+function Hero(props) {
   // function onDescClickHandler(e){
   //   e.target.classList.remove('line-clamp-2')
   // }
   return (
-    <section className='md:h-[85vh]'>
+    <section className='md:h-[85vh]' {...props}>
       <div className="container mx-auto flex h-full px-4 py-16 md:px-4 md:pt-52 lg:px-5 lg:py-7 xl:px-10 ">
         <div className="relative flex w-full flex-col-reverse items-center md:flex-row md:gap-x-7 ">
           <div className="flex flex-col gap-4 md:w-1/2 md:gap-8">

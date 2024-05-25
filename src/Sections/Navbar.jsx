@@ -3,7 +3,7 @@ import { useEffect, useRef, useState } from 'react'
 import logo from '../assets/images/logo/Logo.svg'
 import FeatherIcon from 'feather-icons-react'
 
-const Navbar = () => {
+const Navbar = (props) => {
   const [isOpen, setOpen] = useState(false)
 
   const [nav, setNav] = useState(null)
@@ -31,7 +31,7 @@ const Navbar = () => {
   }
 
   return (
-    <header className='z-20 w-full bg-white bg-opacity-80 backdrop-blur-lg max-lg:fixed lg:bg-transparent lg:backdrop-blur-0'>
+    <header {...props} className='z-20 w-full bg-white bg-opacity-80 backdrop-blur-lg max-lg:fixed lg:bg-transparent lg:backdrop-blur-0'>
       <div className="container mx-auto p-2 xl:px-10 xl:py-7">
         <div className="flex items-center justify-between md:p-3 lg:gap-4 lg:px-0 xl:gap-12 2xl:gap-28">
           <div className="z-50 lg:hidden" >
