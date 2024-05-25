@@ -154,3 +154,13 @@ nav li {
 .flex.gap-\[1\.125rem\] > a > img {
   @apply w-6 lg:w-auto;
 }
+
+label {
+  @apply font-bold text-heading mb-6 block;
+}
+input {
+  @apply w-full border-border transition p-[14px] duration-300 border-[1px] rounded-[5px];
+}
+input:focus {
+    @apply border-link-active outline-none ;
+  }
