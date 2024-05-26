@@ -156,7 +156,7 @@ nav li {
 }
 
 label {
-  @apply font-bold text-heading mb-6 block;
+  @apply font-bold text-heading mb-3 block;
 }
 input {
   @apply w-full border-border transition p-[14px] duration-300 border-[1px] rounded-[5px];
