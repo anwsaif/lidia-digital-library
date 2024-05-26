@@ -17,7 +17,7 @@ function Login() {
           <button className='mt-7 w-full rounded-[4px] bg-primary py-4 text-sm font-bold text-white'>Login</button>
         </form>
       </div>
-      <div className='mt-10 flex flex-col gap-10 text-sm text-desc'>
+      <div className='mt-10 flex flex-col gap-10 text-center text-sm text-desc'>
         <p>Don't have an account? <a href="#" className='text-link-active hover:text-desc'>Create One!</a></p>
         <span>© 2024 Lidia. All rights reserved.</span>
       </div>
