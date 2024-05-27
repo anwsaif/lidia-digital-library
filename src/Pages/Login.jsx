@@ -12,9 +12,9 @@ function Login() {
           <p className='mb-10 text-desc'>Input your username and password.</p>
           <form action="#">
             <label htmlFor="username">Username</label>
-            <input autoFocus type="text" name='username'  id='username'/>
+            <input autoFocus placeholder='e.g. John' type="text" name='username'  id='username'/>
             <label htmlFor="password" className='mt-6'>Password</label>
-            <input type="text" name='password'  id='password'/>
+            <input type="text" name='password' placeholder='e.g. john@example.com' id='password'/>
             <button className='mt-7 w-full rounded-[4px] bg-primary py-4 text-sm font-bold text-white'>Login</button>
           </form>
         </div>
