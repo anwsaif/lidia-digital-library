@@ -3,6 +3,11 @@ import logo from '../assets/images/logo/Logo-round-big.png'
 import { Eye, EyeOff } from 'feather-icons-react'
 
 function Login() {
+  const [showPassword, setShowPassword] = useState(false)
+  const togglePasswordVisibility = (e) => {
+    e.preventDefault()
+    setShowPassword(!showPassword)
+  }
   return (
     <div id='login' className="container mx-auto h-screen px-2 py-5 xl:py-7 2xl:py-10">
       <div className="flex h-fit flex-col items-center justify-center min-[1920px]:h-full">
