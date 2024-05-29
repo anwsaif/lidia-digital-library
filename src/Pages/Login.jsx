@@ -1,13 +1,8 @@
 import React, { useState } from "react";
 import logo from "../assets/images/logo/Logo-round-big.png";
-import { Eye, EyeOff } from "feather-icons-react";
+import PasswordInput from "../Elements/PasswordInput";
 
 function Login() {
-  const [showPassword, setShowPassword] = useState(false);
-  const togglePasswordVisibility = (e) => {
-    e.preventDefault();
-    setShowPassword(!showPassword);
-  };
   return (
     <div
       id="login"
@@ -33,20 +28,7 @@ function Login() {
             <label htmlFor="password" className="mt-6">
               Password
             </label>
-            <div className="relative">
-              <input
-                type={showPassword ? "text" : "password"}
-                name="password"
-                placeholder="e.g. youknowtherulesandsodoi"
-                id="password"
-              />
-              <button
-                className="absolute right-3 top-1/2 -translate-y-1/2 text-desc"
-                onClick={togglePasswordVisibility}
-              >
-                {showPassword ? <Eye size="15" /> : <EyeOff size="15" />}
-              </button>
-            </div>
+            <PasswordInput />
 
             <button className="mt-7 w-full rounded-[4px] bg-primary py-4 text-sm font-bold text-white">
               Login
