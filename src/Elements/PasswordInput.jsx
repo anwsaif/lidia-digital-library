@@ -12,7 +12,7 @@ const PasswordInput = ({isConfirm = false}) => {
         type={showPassword ? "text" : "password"}
         name={isConfirm ? "confirm_password" : "password"}
         placeholder="e.g. youknowtherulesandsodoi"
-        id="password"
+        id={isConfirm ? "confirm_password" : "password"}
       />
       <button
       type="button"
