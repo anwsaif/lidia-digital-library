@@ -159,7 +159,7 @@ label {
   @apply font-bold text-heading mb-3 block;
 }
 input {
-  @apply text-desc text-sm w-full border-border transition p-[14px] duration-300 border-[1px] rounded-[5px];
+  @apply text-desc text-sm w-full border-border transition p-[14px] duration-300 border-[1px] rounded-[5px] max-h-10;
 }
 input:focus {
     @apply border-link-active outline-none ;
