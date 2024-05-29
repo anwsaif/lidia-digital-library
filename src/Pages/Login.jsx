@@ -11,11 +11,7 @@ function Login() {
   return (
     <div id='login' className="container mx-auto h-screen px-2 py-5 xl:py-7 2xl:py-10">
       <div className="flex h-fit flex-col items-center justify-center min-[1920px]:h-full">
-        <img src={logo} alt="" className='max-w-[100px] '/>
-        <div className="w-max-[400px] mt-5 w-fit rounded-[5px] border-t-[1.5px] border-primary bg-white px-6 pb-4 pt-4 drop-shadow-normal-dark md:px-8 lg:px-9 lg:pt-10 xl:mt-6 2xl:mt-12">
-          <p className='mb-6 text-desc'><span className='text-primary'>Home</span> / Login</p>
-          <h6 className='mb-4 text-heading'>Login</h6>
-          <p className='mb-10 text-desc'>Input your username and password.</p>
+        <div className="mt-5 w-fit min-[416px]:w-full max-w-[400px] rounded-[5px] border-t-[1.5px] border-primary bg-white px-6 pb-4 pt-4 drop-shadow-normal-dark md:px-8 lg:px-9 lg:pb-5 lg:pt-10 xl:mt-6 2xl:mt-12">
           <form action="#">
             <label htmlFor="username">Username</label>
             <input autoFocus placeholder='e.g. John' type="text" name='username'  id='username'/>
