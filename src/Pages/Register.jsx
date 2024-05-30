@@ -18,9 +18,28 @@ function Register() {
           <form action="#">
             <div className="grid grid-cols-2 gap-x-7 gap-y-6">
               <div>
-                <label htmlFor="username">Username</label>
+                <label htmlFor="full_name">Full Name</label>
                 <input
                   autoFocus
+                  placeholder="e.g. Rick Ashley"
+                  type="text"
+                  name="full_name"
+                  id="full_name"
+                />
+              </div>
+              <div>
+                <label htmlFor="nik">NIK</label>
+                <input
+                  placeholder="e.g. 1050241708900001"
+                  type="number"
+                  name="nik"
+                  id="nik"
+                  style={{'-moz-appearance': 'textfield'}}
+                />
+              </div>
+              <div>
+                <label htmlFor="username">Username</label>
+                <input
                   placeholder="e.g. rick"
                   type="text"
                   name="username"
@@ -28,13 +47,71 @@ function Register() {
                 />
               </div>
               <div>
-                <label htmlFor="password" className="mt-6">
+                <label htmlFor="email">Email</label>
+                <input
+                  placeholder="e.g. rickmogsyoud@gmail.com"
+                  type="email"
+                  name="email"
+                  id="email"
+                />
+              </div>
+              <div>
+                <label htmlFor="phone">Phone</label>
+                <input
+                  placeholder="e.g. 082384763478"
+                  type="tel"
+                  name="phone"
+                  id="phone"
+                />
+              </div>
+              <div>
+                <label htmlFor="birth">Date of Birth</label>
+                <input
+                  type="date"
+                  name="birth"
+                  id="birth"
+                />
+              </div>
+              <div>
+                <label htmlFor="address">Address</label>
+                <input
+                  placeholder="e.g. JL. Free Fire Factory, No. 1, Kla Only"
+                  type="text"
+                  name="address"
+                  id="address"
+                />
+              </div>
+              <div>
+                <label htmlFor="gender">Gender</label>
+                <div className="flex items-center gap-x-5 mt-5">
+                  <div className="flex items-center gap-x-2">
+                    <input
+                      type="radio"
+                      name="gender"
+                      id="male"
+                      value="male"
+                    />
+                    <label htmlFor="male" className="mb-0">Male</label>
+                  </div>
+                  <div className="flex items-center gap-x-2">
+                    <input
+                      type="radio"
+                      name="gender"
+                      id="female"
+                      value="female"
+                    />
+                    <label htmlFor="female" className="mb-0">Female</label>
+                  </div>
+                </div>
+              </div>
+              <div>
+                <label htmlFor="password">
                   Password
                 </label>
                 <PasswordInput />
               </div>
               <div>
-                <label htmlFor="confirm_password" className="mt-6">
+                <label htmlFor="confirm_password">
                   Confirm Password
                 </label>
                 <PasswordInput isConfirm="true" />
