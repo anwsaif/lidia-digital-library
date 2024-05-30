@@ -14,7 +14,7 @@ const RadioButton = (props) => {
   return (
     <div className="flex items-center gap-x-2">
       <input type="radio" value={id} {...props} 
-				className='opacity-0 absolute'
+				className='opacity-0 absolute h-0 w-0'
       />
       <label htmlFor={id} className="mb-0 flex items-center gap-x-2">
       {checked ? 
