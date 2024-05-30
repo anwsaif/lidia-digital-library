@@ -20,15 +20,10 @@ function App() {
 
   return (
     <>
+      
       <Register />
       {/* <Login /> */}
-      {/* <Navbar/> */}
-      {/* <Hero/> */}
-      {/* <Features /> */}
-      {/* <Services /> */}
-      {/* <Reviews /> */}
-      {/* <Location /> */}
-      {/* <Footer /> */}
+      
     </>
   );
 }
