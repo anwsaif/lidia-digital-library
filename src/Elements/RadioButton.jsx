@@ -16,16 +16,16 @@ const RadioButton = (props) => {
       <input type="radio" value={id} {...props} 
 				className='opacity-0 absolute'
       />
-      <div onClick={handleClick}>
+      <label htmlFor={id} className="mb-0 flex items-center gap-x-2">
       {checked ? 
         <div className="relative flex items-center justify-center">
           <div className="bg-primary w-5 h-5 rounded-full"></div>
           <div className="bg-white w-[10px] h-[10px] rounded-full absolute"></div>
         </div>  :
         <div className="border-border w-5 h-5 rounded-full border-[2.5px]"></div>
-    }</div>
-      <label htmlFor={id} className="mb-0">
-        {label}
+    }
+      
+        <span>{label}</span>
       </label>
     </div>
   );
