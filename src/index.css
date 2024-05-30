@@ -164,3 +164,6 @@ input {
 input:focus {
     @apply border-link-active outline-none ;
   }
+/* input[type=radio] {
+  @apply checked:bg-red-500;
+} */

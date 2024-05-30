@@ -1,8 +1,13 @@
 import React, { useState } from "react";
 import logo from "../assets/images/logo/Logo-round-big.png";
 import PasswordInput from "../Elements/PasswordInput";
+import RadioButton from "../Elements/RadioButton";
 
 function Register() {
+  const [selectedOption, setSelectedOption] = useState(null)
+  const handleGenderOptionChange = (event) => {
+    setSelectedOption(event.target.value);
+  }
   return (
     <div className="container mx-auto h-screen px-2 py-5 xl:py-7 min-[1440px]:py-10">
       <div className="flex h-fit flex-col items-center justify-center min-[1920px]:h-full">
@@ -84,24 +89,21 @@ function Register() {
               <div>
                 <label htmlFor="gender">Gender</label>
                 <div className="flex items-center gap-x-5 mt-5">
-                  <div className="flex items-center gap-x-2">
-                    <input
-                      type="radio"
-                      name="gender"
-                      id="male"
-                      value="male"
-                    />
-                    <label htmlFor="male" className="mb-0">Male</label>
-                  </div>
-                  <div className="flex items-center gap-x-2">
-                    <input
-                      type="radio"
-                      name="gender"
-                      id="female"
-                      value="female"
-                    />
-                    <label htmlFor="female" className="mb-0">Female</label>
-                  </div>
+                  <RadioButton 
+                    name="gender"
+                    id="male"
+                    label="Male"
+                    checked={selectedOption === 'male'}
+                    onChange={handleGenderOptionChange}
+                  />
+                  <RadioButton 
+                    name="gender"
+                    id="female"
+                    label="Female"
+                    checked={selectedOption === 'female'}
+                    onChange={handleGenderOptionChange}
+                  />
+                  
                 </div>
               </div>
               <div>
