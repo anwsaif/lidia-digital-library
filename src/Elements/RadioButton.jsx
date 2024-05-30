@@ -1,18 +1,9 @@
-import React, { useState, useEffect } from "react";
+import React from "react";
 
 const RadioButton = (props) => {
 	const {id, label, checked} = props
-  const [radio, setRadio] = useState(null)
-
-  useEffect(() => {
-    setRadio(document.getElementById(id))
-  }, [])
-
-  const handleClick = () => {
-    radio.click()
-  }
   return (
-    <div className="flex items-center gap-x-2">
+    <>
       <input type="radio" value={id} {...props} 
 				className='opacity-0 absolute h-0 w-0'
       />
@@ -27,7 +18,7 @@ const RadioButton = (props) => {
       
         <span>{label}</span>
       </label>
-    </div>
+    </>
   );
 };
 
