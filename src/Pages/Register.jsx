@@ -21,7 +21,7 @@ function Register() {
             Register yourself to do something on Lidia.
           </p>
           <form action="#">
-            <div className="grid grid-cols-2 gap-x-7 gap-y-6">
+            <div className="grid sm:grid-cols-2 gap-x-7 gap-y-6">
               <div>
                 <label htmlFor="full_name">Full Name</label>
                 <input
