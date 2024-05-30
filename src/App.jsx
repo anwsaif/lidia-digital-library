@@ -1,13 +1,9 @@
-import Navbar from "./Sections/Navbar";
-import Hero from "./Sections/Hero";
-import Features from "./Sections/Features";
-import Services from "./Sections/Services";
-import Reviews from "./Sections/Reviews";
-import Location from "./Sections/Location";
-import Footer from "./Sections/Footer";
+import Home from './Pages/Home'
 import Login from "./Pages/Login";
 import Register from "./Pages/Register";
+
 import { useEffect } from "react";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 // animation on scroll
 import AOS from "aos";
@@ -20,10 +16,13 @@ function App() {
 
   return (
     <>
-      
-      <Register />
-      {/* <Login /> */}
-      
+      <Router>
+        <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/login" element={<Login />} />
+            <Route path="/register" element={<Register />} />
+        </Routes>
+      </Router>
     </>
   );
 }
