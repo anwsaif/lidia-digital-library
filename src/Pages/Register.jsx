@@ -39,7 +39,7 @@ function Register() {
                   type="number"
                   name="nik"
                   id="nik"
-                  style={{'-moz-appearance': 'textfield'}}
+                  style={{'MozAppearance': 'textfield'}}
                 />
               </div>
               <div>
