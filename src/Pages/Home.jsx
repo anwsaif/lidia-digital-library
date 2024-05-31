@@ -14,6 +14,8 @@ function Home() {
     setTimeout(() => {
       setScreenLoading(false);
     }, 3000);
+    document.getElementsByTagName('body')[0].style.position = 'static'
+    document.getElementsByTagName('body')[0].style.overflow = 'auto'
   }, []);
   return (
     <>

@@ -6,6 +6,8 @@ import { Link } from "react-router-dom";
 
 function Register() {
   const [selectedOption, setSelectedOption] = useState(null)
+    document.getElementsByTagName('body')[0].style.position = 'static'
+    document.getElementsByTagName('body')[0].style.overflow = 'auto'
   const handleGenderOptionChange = (event) => {
     setSelectedOption(event.target.value);
   }

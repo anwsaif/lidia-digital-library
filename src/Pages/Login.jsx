@@ -4,6 +4,8 @@ import PasswordInput from "../Elements/PasswordInput";
 import { Link } from "react-router-dom";
 
 function Login() {
+    document.getElementsByTagName('body')[0].style.position = 'static'
+    document.getElementsByTagName('body')[0].style.overflow = 'auto'
   return (
     <div
       id="login"
