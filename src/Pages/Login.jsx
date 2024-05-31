@@ -1,15 +1,27 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import logo from "../assets/images/logo/Logo-round-big.png";
 import PasswordInput from "../Elements/PasswordInput";
 import { Link } from "react-router-dom";
+import { Cube } from 'react-preloaders'
 
 function Login() {
+  const [screenLoading, setScreenLoading] = useState(true)
+  useEffect(() => {
+    setTimeout(() => {
+      setScreenLoading(false)
+    }, 1000)
     document.getElementsByTagName('body')[0].style.position = 'static'
     document.getElementsByTagName('body')[0].style.overflow = 'auto'
+  }, [])
   return (
+    <>
+    {screenLoading ? (
+      <Cube color="rgb(68, 117, 242)" />
+    ) : (
     <div
       id="login"
       className="container mx-auto h-screen px-2 py-5 xl:py-7 min-[1440px]:py-10"
+      data-aos="fade-zoom-in" data-aos-duration="1800"
     >
       <div className="flex h-fit flex-col items-center justify-center min-[1920px]:h-full">
         <Link to={"/"} className=" hover:opacity-100">
@@ -52,6 +64,8 @@ function Login() {
         </div>
       </div>
     </div>
+    )}
+    </>
   );
 }
 
