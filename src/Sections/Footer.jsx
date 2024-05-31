@@ -34,8 +34,10 @@ function Footer() {
         </div>
       </div>
       <div className="bg-primary text-white">
-        <div className="container mx-auto py-6 lg:py-12">
-          <span className='block w-full text-center text-xs font-bold lg:text-sm'>© 2024 Lidia. All rights reserved.</span>
+        <div className="container mx-auto text-xs font-bold lg:text-sm text-center py-6 lg:py-12">
+          <span className='block w-full mb-3'>© 2024 Lidia. All rights reserved.</span>
+          <span>Original Design by <a target='_blank' className='font-medium mb-2' href="https://www.figma.com/@alpi">Muhammad Alfian</a></span>
+          <span> & Coded by <a target='_blank' className='font-medium' href="https://github.com/anwsaif/">Anwar S</a></span>
         </div>
       </div>
     </footer>
