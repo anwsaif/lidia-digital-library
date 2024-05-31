@@ -51,13 +51,14 @@ const Navbar = (props) => {
   }
 
   return (
+    <>
     <header className={'z-20 w-full bg-white bg-opacity-90 backdrop-blur-lg fixed  transition duration-600 ease-in-out '+ (isScrolled ? 'lg:bg-white lg:backdrop-blur-lg lg:bg-opacity-80' : 'lg:bg-transparent lg:backdrop-blur-0')}>
       <div className="container mx-auto p-2 xl:px-10 xl:py-7">
         <div className="flex items-center justify-between md:p-3 lg:gap-4 lg:px-0 xl:gap-12 2xl:gap-28">
           <div className="z-50 lg:hidden" >
           <Hamburger onToggle={onHamburgerClickHandler} toggled={isOpen} toggle={setOpen} size={24} />
           </div>
-          <a href="/" title='Home Page' className='hover:opacity-100'>
+          <a href="/#" title='Home Page' className='hover:opacity-100'>
             <img src={logo} alt="Lidia" className='rounded-[1.25rem] px-[0.625rem] py-2 lg:px-0'/>
           </a>
           <nav className='absolute left-0 top-0 z-10 hidden h-screen w-screen items-center justify-center bg-white opacity-0 transition duration-300 ease-in-out lg:static lg:left-auto lg:top-auto lg:flex lg:h-auto lg:w-auto lg:bg-transparent lg:opacity-100'>
@@ -79,6 +80,10 @@ const Navbar = (props) => {
         </div>
       </div>
     </header>
+    <a href='#' className={'flex items-center justify-center w-10 h-10 transition duration-400 ease-in hover:opacity-100 bg-primary rounded-full fixed right-2 bottom-2 ' + (isScrolled ? 'z-10 opacity-100' : '-z-40 opacity-0')}>
+      <FeatherIcon icon='arrow-up' className='text-white' />
+    </a>
+    </>
   )
 }
 
