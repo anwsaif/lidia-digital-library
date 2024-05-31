@@ -2,6 +2,7 @@ import { Divide as Hamburger } from 'hamburger-react'
 import { useEffect, useRef, useState } from 'react'
 import logo from '../assets/images/logo/Logo.svg'
 import FeatherIcon from 'feather-icons-react'
+import { Link } from 'react-router-dom'
 
 const Navbar = (props) => {
   const [isOpen, setOpen] = useState(false)
@@ -45,17 +46,17 @@ const Navbar = (props) => {
               <li>
                 <a href="#features" onClick={onNavLinkClickHandler}>Features</a></li>
               <li>
-                <a href="#services">Services</a></li>
+                <a href="#services" onClick={onNavLinkClickHandler}>Services</a></li>
               <li>
-                <a href="#reviews">Reviews</a></li>
+                <a href="#reviews" onClick={onNavLinkClickHandler}>Reviews</a></li>
               <li>
-                <a href="#location">Location</a></li>
+                <a href="#location" onClick={onNavLinkClickHandler}>Location</a></li>
             </ul>
           </nav>
-          <button className='rounded-[0.625rem] lg:ml-auto lg:bg-white' title='Login'>
+          <Link to={'/login'} className='rounded-[0.625rem] lg:ml-auto lg:bg-white' title='Login'>
             <FeatherIcon icon='log-in' className='mr-2 lg:hidden' />
             <span className='mx-12 my-2 hidden font-bold leading-6 text-heading lg:block'>Login</span>
-          </button>
+          </Link>
         </div>
       </div>
     </header>
