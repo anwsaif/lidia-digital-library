@@ -1,6 +1,4 @@
 import React from 'react'
-import service from '../assets/images/Service.jpg'
-import reading from '../assets/images/Reading.jpg'
 import Review from '../Elements/Review'
 import review1 from '../assets/images/reviews/cover.png'
 import review2 from '../assets/images/reviews/cover(1).png'
@@ -40,7 +38,6 @@ function Reviews() {
             {reviews.map((data) => {
               return <Review logo={data.logo} name={data.name} review={data.review} occupation={data.occupation} index={i++}/> 
             })}
-            {/* <Review /> */}
           </div>
         </div>
       </div>
