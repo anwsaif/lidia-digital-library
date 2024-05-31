@@ -21,7 +21,7 @@ const features = [
     description: 'Curate your literary dreams–wishlist books  for future adventures and discoveries.',
   },
 ]
-
+let f = 0;
 function Features() {
   return (
     <section id='features' className='2xl:mt-96'>
@@ -31,8 +31,10 @@ function Features() {
           <h2 data-aos="fade-up" data-aos-duration="1300">🤔• What You Can Do?</h2>
 
           <div className="flex flex-wrap justify-around gap-6 lg:gap-x-28 xl:justify-between">
-            {features.map(({logo, title, description},index) => {
-              return <Feature key={index} logo={logo} title={title} description={description} className='mt-4 lg:mt-20'/>
+            {features.map(({logo, title, description}) => {
+              return <Feature 
+              index={f++}
+               logo={logo} title={title} description={description} className='mt-4 lg:mt-20'/>
             })}
           </div>
         </div>

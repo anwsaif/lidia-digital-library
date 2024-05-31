@@ -6,6 +6,25 @@ import { Link } from 'react-router-dom'
 
 const Navbar = (props) => {
   const [isOpen, setOpen] = useState(false)
+  const [isScrolled, setIsScrolled] = useState(false)
+
+  useEffect(
+    () => {
+      window.addEventListener('scroll', handleScroll)
+      return () => {
+        window.removeEventListener('scroll', handleScroll)
+      }
+    },
+    []
+  )
+
+  const handleScroll = () => {
+    if (window.scrollY > 84) {
+      setIsScrolled(true)
+    } else {
+      setIsScrolled(false)
+    }
+  }
 
   const [nav, setNav] = useState(null)
   useEffect(() => {
@@ -32,7 +51,7 @@ const Navbar = (props) => {
   }
 
   return (
-    <header data-aos="fade-zoom-in" data-aos-duration="2000" className='z-20 w-full bg-white bg-opacity-80 backdrop-blur-lg max-lg:fixed lg:bg-transparent lg:backdrop-blur-0'>
+    <header className={'z-20 w-full bg-white bg-opacity-90 backdrop-blur-lg fixed  transition duration-600 ease-in-out '+ (isScrolled ? 'lg:bg-white lg:backdrop-blur-lg lg:bg-opacity-80' : 'lg:bg-transparent lg:backdrop-blur-0')}>
       <div className="container mx-auto p-2 xl:px-10 xl:py-7">
         <div className="flex items-center justify-between md:p-3 lg:gap-4 lg:px-0 xl:gap-12 2xl:gap-28">
           <div className="z-50 lg:hidden" >
@@ -53,9 +72,9 @@ const Navbar = (props) => {
                 <a href="#location" onClick={onNavLinkClickHandler}>Location</a></li>
             </ul>
           </nav>
-          <Link to={'/login'} className='rounded-[0.625rem] lg:ml-auto lg:bg-white' title='Login'>
+          <Link to={'/login'} className={'rounded-[0.625rem] lg:ml-auto ' + (isScrolled ? 'lg:bg-primary lg:text-white' : 'lg:bg-white lg:text-heading')} title='Login'>
             <FeatherIcon icon='log-in' className='mr-2 lg:hidden' />
-            <span className='mx-12 my-2 hidden font-bold leading-6 text-heading lg:block'>Login</span>
+            <span className='mx-12 my-2 hidden font-bold leading-6 lg:block'>Login</span>
           </Link>
         </div>
       </div>

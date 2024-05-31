@@ -11,6 +11,7 @@ function Home() {
   return (
     <>
       <Navbar/>
+      <div className="w-full h-[84px] xl:h-[124px] max-lg:hidden "></div>
       <Hero/>
       <Features />
       <Services />

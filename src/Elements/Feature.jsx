@@ -1,8 +1,8 @@
 import React from 'react'
 
-function Feature({key, logo, title, description, className=''}) {
+function Feature({index, logo, title, description, className=''}) {
   return (
-    <div data-aos="fade-right" data-aos-duration="1500" key={key} className={`flex flex-col gap-5 max-w-[17.5625rem] justify-between items-center `+ className}>
+    <div data-aos="fade-right" data-aos-duration={(index === 6) ? '400' : ((index === 7) ? '800' : '1200')} key={index} className={`flex flex-col gap-5 max-w-[17.5625rem] justify-between items-center `+ className}>
       <div className="h-[6.375rem] w-[6.375rem] rounded-[1.625rem] bg-primary drop-shadow-extrabold-dark">
         <img src={logo} className='p-7' alt=""/>
       </div>

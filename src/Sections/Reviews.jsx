@@ -28,6 +28,7 @@ const reviews = [
 ]
 
 function Reviews() {
+  let i = 0;
   return (
     <section className='2xl:mt-96' id='reviews'>
       <div className="container mx-auto my-12 px-4 py-2 md:px-4 lg:my-[6.25rem] lg:px-5 lg:py-7 xl:px-10">
@@ -37,7 +38,7 @@ function Reviews() {
 
           <div className="flex flex-wrap justify-center gap-9 lg:mt-12 lg:gap-[3.1875rem] xl:mt-[5.625rem] 2xl:justify-around ">
             {reviews.map((data) => {
-              return <Review logo={data.logo} name={data.name} review={data.review} occupation={data.occupation} /> 
+              return <Review logo={data.logo} name={data.name} review={data.review} occupation={data.occupation} index={i++}/> 
             })}
             {/* <Review /> */}
           </div>
