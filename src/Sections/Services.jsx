@@ -18,7 +18,7 @@ const services = [
 function Services() {
   return (
     <section data-aos="fade-up" data-aos-duration="1500" className='2xl:mt-96' id='services'>
-      <div className="container mx-auto my-12 px-4 py-2 md:px-4 lg:my-[6.25rem] lg:px-5 lg:py-7 xl:px-10">
+      <div className="container mx-auto my-12 px-4 py-2 md:px-4 lg:my-[6.25rem] lg:px-5 lg:py-7 xl:px-10 overflow-hidden">
         <div className="flex w-full flex-col gap-4 ">
           <span data-aos="fade-up" className='capitalised text-xs text-primary'>SERVICES</span>
           <h2 data-aos="fade-up" data-aos-duration="1300">🚀• The Services for You</h2>
