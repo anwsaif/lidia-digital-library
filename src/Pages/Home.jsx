@@ -6,42 +6,22 @@ import Services from "../Sections/Services";
 import Reviews from "../Sections/Reviews";
 import Location from "../Sections/Location";
 import Footer from "../Sections/Footer";
-import { Cube } from "react-preloaders";
+import { clearPreloader } from '../Functions/clearPreloader'
 
 function Home() {
-  // const [screenLoading, setScreenLoading] = useState(true);
-  // useEffect(() => {
-
-  //   const preloader = document.getElementById('preloader')
-  //   if(preloader){
-  //     setTimeout(() => {
-  //       setScreenLoading(false)
-  //     })
-  //     setTimeout(() => {
-  //       preloader.style.opacity = 0
-  //       document.getElementsByTagName('body')[0].style.position = 'static'
-  //       document.getElementsByTagName('body')[0].style.overflowY = 'auto'
-  //       setTimeout(() => {
-  //         preloader.style.display = 'none'
-  //       }, 1000)
-  //     }, 1000)
-  //   }
-  // }, [])
+  useEffect(() => {
+    clearPreloader()
+  }, [])
   return (
     <>
-    {/* <Cube color="rgb(68, 117, 242)" /> */}
-    {/*   {!screenLoading && ( */}
-    {/*     <> */}
-          <Navbar />
-          <div className="h-[84px] w-full max-lg:hidden xl:h-[124px]"></div>
-          <Hero />
-          <Features />
-          <Services />
-          <Reviews />
-          <Location />
-          <Footer />
-      {/*   </> */}
-      {/* ) } */}
+      <Navbar />
+      <div className="h-[84px] w-full max-lg:hidden xl:h-[124px]"></div>
+      <Hero />
+      <Features />
+      <Services />
+      <Reviews />
+      <Location />
+      <Footer />
     </>
   );
 }

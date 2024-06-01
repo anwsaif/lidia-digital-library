@@ -3,36 +3,21 @@ import logo from "../assets/images/logo/Logo-round-big.png";
 import PasswordInput from "../Elements/PasswordInput";
 import RadioButton from "../Elements/RadioButton";
 import { Link } from "react-router-dom";
-import { Cube } from "react-preloaders";
+import { clearPreloader } from '../Functions/clearPreloader'
 
 function Register() {
   const [selectedOption, setSelectedOption] = useState(null)
-  // const [screenLoading, setScreenLoading] = useState(true)
 
-  // useEffect(() => {
+  useEffect(() => {
+    clearPreloader()
+  }, [])
 
-  //   const preloader = document.getElementById('preloader')
-  //   if(preloader){
-  //     setTimeout(() => {
-  //       setScreenLoading(false)
-  //     })
-  //     setTimeout(() => {
-  //       preloader.style.opacity = 0
-  //       document.getElementsByTagName('body')[0].style.position = 'static'
-  //       document.getElementsByTagName('body')[0].style.overflow = 'auto'
-  //       setTimeout(() => {
-  //         preloader.style.display = 'none'
-  //       }, 1000)
-  //     }, 1000)
-  //   }
-  // }, [])
   const handleGenderOptionChange = (event) => {
     setSelectedOption(event.target.value);
   }
+
   return (
     <>
-      {/* <Cube color="rgb(68, 117, 242)" /> */}
-      {/* {!screenLoading && ( */}
        
       <div className="container mx-auto h-screen px-2 py-5 xl:py-7 min-[1440px]:py-10" data-aos="fade-zoom-in" data-aos-duration="800">
         <div className="flex h-fit flex-col items-center justify-center min-[1920px]:h-full">

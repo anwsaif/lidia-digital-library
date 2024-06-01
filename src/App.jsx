@@ -1,8 +1,4 @@
-import Home from './Pages/Home'
-import Login from "./Pages/Login";
-import Register from "./Pages/Register";
-
-import { useEffect, Suspense } from "react";
+import { useEffect, Suspense, lazy} from "react";
 import { BrowserRouter as Router, Routes, Route, Navigate } from "react-router-dom";
 
 // animation on scroll
@@ -14,6 +10,11 @@ function App() {
   useEffect(() => {
     AOS.init({ duration: 1000, once: true });
   });
+
+
+  const Register = lazy(() => import('./Pages/Register'))
+  const Login = lazy(() => import('./Pages/Login'))
+  const Home = lazy(() => import('./Pages/Home'))
 
   return (
     <>
