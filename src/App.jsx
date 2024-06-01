@@ -2,12 +2,13 @@ import Home from './Pages/Home'
 import Login from "./Pages/Login";
 import Register from "./Pages/Register";
 
-import { useEffect } from "react";
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { useEffect, Suspense } from "react";
+import { BrowserRouter as Router, Routes, Route, Navigate } from "react-router-dom";
 
 // animation on scroll
 import AOS from "aos";
 import "aos/dist/aos.css";
+import { Cube } from 'react-preloaders';
 
 function App() {
   useEffect(() => {
@@ -17,11 +18,14 @@ function App() {
   return (
     <>
       <Router>
-        <Routes>
+        <Suspense fallback={<Cube color="rgb(68, 117, 242)" />}>
+          <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/login" element={<Login />} />
             <Route path="/register" element={<Register />} />
-        </Routes>
+            <Route path='*' element={<Navigate to='/'/>} />
+          </Routes>
+        </Suspense>
       </Router>
     </>
   );

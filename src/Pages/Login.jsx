@@ -5,30 +5,30 @@ import { Link } from "react-router-dom";
 import { Cube } from 'react-preloaders'
 
 function Login() {
-  const [screenLoading, setScreenLoading] = useState(true)
+  // const [screenLoading, setScreenLoading] = useState(true)
 
-  useEffect(() => {
+  // useEffect(() => {
 
-    const preloader = document.getElementById('preloader')
-    if(preloader){
-      setTimeout(() => {
-        setScreenLoading(false)
-      })
-      setTimeout(() => {
-        preloader.style.opacity = 0
-        document.getElementsByTagName('body')[0].style.position = 'static'
-        document.getElementsByTagName('body')[0].style.overflow = 'auto'
-        setTimeout(() => {
-          preloader.style.display = 'none'
-        }, 1000)
-      }, 1000)
-    }
-  }, [])
+  //   const preloader = document.getElementById('preloader')
+  //   if(preloader){
+  //     setTimeout(() => {
+  //       setScreenLoading(false)
+  //     })
+  //     setTimeout(() => {
+  //       preloader.style.opacity = 0
+  //       document.getElementsByTagName('body')[0].style.position = 'static'
+  //       document.getElementsByTagName('body')[0].style.overflow = 'auto'
+  //       setTimeout(() => {
+  //         preloader.style.display = 'none'
+  //       }, 1000)
+  //     }, 1000)
+  //   }
+  // }, [])
   return (
     <>
-      <Cube color="rgb(68, 117, 242)" />
+      {/* <Cube color="rgb(68, 117, 242)" /> */}
 
-      {!screenLoading && (
+      {/* {!screenLoading && ( */}
         <div
           id="login"
           className="container mx-auto h-screen px-2 py-5 xl:py-7 min-[1440px]:py-10"
@@ -75,7 +75,7 @@ function Login() {
             </div>
           </div>
         </div>
-      )}
+      {/* )} */}
     </> 
   );
 }
