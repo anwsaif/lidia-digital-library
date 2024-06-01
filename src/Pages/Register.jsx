@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useLayoutEffect, useState } from "react";
 import logo from "../assets/images/logo/Logo-round-big.png";
 import PasswordInput from "../Elements/PasswordInput";
 import RadioButton from "../Elements/RadioButton";
@@ -9,13 +9,16 @@ function Register() {
   const [selectedOption, setSelectedOption] = useState(null)
   const [screenLoading, setScreenLoading] = useState(true)
 
-  useEffect(() => {
-    setTimeout(() => {
-      setScreenLoading(false)
-    }, 1000)
+  useLayoutEffect(() => {
     document.getElementsByTagName('body')[0].style.position = 'static'
     document.getElementsByTagName('body')[0].style.overflow = 'auto'
-  }, [])
+    setTimeout(() => {
+      document.getElementById('preloader').style.opacity = 0
+      setTimeout(() => {
+        setScreenLoading(false);
+      }, 1000)
+    }, 1000)
+  })
 
   const handleGenderOptionChange = (event) => {
     setSelectedOption(event.target.value);
@@ -24,8 +27,8 @@ function Register() {
     <>
     {screenLoading ? (
       <Cube color="rgb(68, 117, 242)" />
-    ) : (
-    <div className="container mx-auto h-screen px-2 py-5 xl:py-7 min-[1440px]:py-10" data-aos="fade-zoom-in" data-aos-duration="1800">
+    ) : ''}
+    <div className="container mx-auto h-screen px-2 py-5 xl:py-7 min-[1440px]:py-10" data-aos="fade-zoom-in" data-aos-duration="800">
       <div className="flex h-fit flex-col items-center justify-center min-[1920px]:h-full">
         <Link to="/" className=" hover:opacity-100">
         <img src={logo} alt="" className="max-w-[100px]" />
@@ -40,7 +43,7 @@ function Register() {
             Register yourself to do something on Lidia.
           </p>
           <form action="#">
-            <div className="grid sm:grid-cols-2 gap-x-7 gap-y-6">
+            <div className="grid gap-x-7 gap-y-6 sm:grid-cols-2">
               <div>
                 <label htmlFor="full_name">Full Name</label>
                 <input
@@ -107,7 +110,7 @@ function Register() {
               </div>
               <div>
                 <label htmlFor="gender">Gender</label>
-                <div className="flex items-center gap-x-5 mt-5">
+                <div className="mt-5 flex items-center gap-x-5">
                   <RadioButton 
                     name="gender"
                     id="male"
@@ -148,7 +151,6 @@ function Register() {
         </div>
       </div>
     </div>
-    )}
     </>
   );
 }

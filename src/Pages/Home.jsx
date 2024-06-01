@@ -1,4 +1,4 @@
-import React, { useEffect, useLayoutEffect, useState } from "react";
+import React, { useLayoutEffect, useState } from "react";
 import Navbar from "../Sections/Navbar";
 import Hero from "../Sections/Hero";
 import Features from "../Sections/Features";
