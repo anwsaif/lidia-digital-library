@@ -15,7 +15,7 @@ function Home() {
       setScreenLoading(false);
     }, 3000);
     document.getElementsByTagName('body')[0].style.position = 'static'
-    document.getElementsByTagName('body')[0].style.overflow = 'auto'
+    document.getElementsByTagName('body')[0].style.overflowY = 'auto'
   }, []);
   return (
     <>
