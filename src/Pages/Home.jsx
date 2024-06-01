@@ -11,25 +11,26 @@ import { Cube } from "react-preloaders";
 function Home() {
   const [screenLoading, setScreenLoading] = useState(true);
   useEffect(() => {
-    const handlePageLoad = () => {
+
+    const preloader = document.getElementById('preloader')
+    if(preloader){
       setTimeout(() => {
-        document.getElementById('preloader').style.opacity = 0
+        setScreenLoading(false)
+      })
+      setTimeout(() => {
+        preloader.style.opacity = 0
+        document.getElementsByTagName('body')[0].style.position = 'static'
+        document.getElementsByTagName('body')[0].style.overflowY = 'auto'
         setTimeout(() => {
-          setScreenLoading(false);
+          preloader.style.display = 'none'
         }, 1000)
-      }, 2000);
+      }, 1000)
     }
-
-    window.addEventListener('load', handlePageLoad) 
-
-    document.getElementsByTagName('body')[0].style.position = 'static'
-    document.getElementsByTagName('body')[0].style.overflowY = 'auto'
-  }, []);
+  }, [])
   return (
     <>
-      {screenLoading ? (
-        <Cube color="rgb(68, 117, 242)" />
-      ) :'' }
+    <Cube color="rgb(68, 117, 242)" />
+      {!screenLoading && (
         <>
           <Navbar />
           <div className="h-[84px] w-full max-lg:hidden xl:h-[124px]"></div>
@@ -40,6 +41,7 @@ function Home() {
           <Location />
           <Footer />
         </>
+      ) }
     </>
   );
 }
