@@ -80,9 +80,9 @@ const Navbar = (props) => {
         </div>
       </div>
     </header>
-    <a href='#' className={'duration-400 fixed bottom-2 right-2 flex h-10 w-10 items-center justify-center rounded-full bg-primary transition ease-in hover:opacity-100 ' + (isScrolled ? 'z-10 opacity-100' : '-z-40 opacity-0')}>
+    <button type="button" onClick={()=>window.scrollTo(0,0)} className={'duration-400 fixed bottom-2 right-2 flex h-10 w-10 items-center justify-center rounded-full bg-primary transition ease-in hover:opacity-100 ' + (isScrolled ? 'z-10 opacity-100' : '-z-40 opacity-0')}>
       <FeatherIcon icon='arrow-up' className='text-white' />
-    </a>
+    </button>
     </>
   )
 }
