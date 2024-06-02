@@ -2,13 +2,10 @@ import React from 'react'
 import Left from '../assets/images/Left.png'
 
 function Hero() {
-  // function onDescClickHandler(e){
-  //   e.target.classList.remove('line-clamp-2')
-  // }
   return (
     <section className='md:h-[85vh]'>
-      <div className="container mx-auto flex h-full overflow-visible px-4 py-16 md:px-4 md:pt-52 lg:px-5 lg:py-7 xl:px-10 ">
-        <div className="relative flex w-full flex-col-reverse items-center md:flex-row md:gap-x-7 ">
+      <div className="container mx-auto flex h-full overflow-visible px-4 pb-8 pt-16 md:px-4 md:pt-52 lg:px-5 lg:py-7 xl:px-10 ">
+        <div className="relative flex w-full flex-col-reverse items-center gap-y-5 md:flex-row md:gap-x-7">
           <div data-aos="fade-right" className="flex flex-col gap-4 md:w-1/2 md:gap-8">
             <h1 className='text-heading'>Search & review your <span className='text-primary underline'>fav book</span> effortlessly</h1>
             <p className='text-desc-base line-clamp-3 sm:line-clamp-none' onClick={e => e.target.classList.remove('line-clamp-3')}>Embark on a literary journey like never before with our revolutionary library application! Introducing a seamless experience that transcends traditional boundaries, where  you can effortlessly search your favorite books.✨</p>
