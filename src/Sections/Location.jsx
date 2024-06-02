@@ -8,7 +8,7 @@ function Location() {
           <span data-aos="fade-right" className='capitalised text-xs text-primary'>LOCATION</span>
           <h2 data-aos="fade-right" data-aos-duration="1300" >🗺• Our Library Location</h2>
 
-          <div data-aos="fade-zoom-in" className="aspect-[80/27] rounded-10 bg-[url('./assets/images/Location.png')] bg-cover bg-no-repeat drop-shadow-extrabold-dark lg:mt-12 xl:mt-[5.625rem]">
+          <div data-aos="fade-zoom-in" className="aspect-[80/27] rounded-10 bg-[url('./assets/images/Location.png')] bg-cover bg-no-repeat shadow-xl lg:mt-12 xl:mt-[5.625rem]">
 
           </div>
         </div>
