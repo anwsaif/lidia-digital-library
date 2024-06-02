@@ -19,7 +19,7 @@ const Navbar = (props) => {
   )
 
   const handleScroll = () => {
-    if (window.scrollY > 84) {
+    if (window.scrollY > 104) {
       setIsScrolled(true)
     } else {
       setIsScrolled(false)
@@ -52,7 +52,7 @@ const Navbar = (props) => {
 
   return (
     <>
-    <header className={'z-20 w-full bg-white bg-opacity-90 backdrop-blur-lg fixed  transition duration-600 ease-in-out '+ (isScrolled ? 'lg:bg-white lg:backdrop-blur-lg lg:bg-opacity-80' : 'lg:bg-transparent lg:backdrop-blur-0')}>
+    <header className={'duration-600 fixed z-20 w-full bg-white bg-opacity-90  backdrop-blur-lg transition ease-in-out '+ (isScrolled ? 'lg:bg-white lg:bg-opacity-80 lg:backdrop-blur-lg' : 'lg:bg-transparent lg:backdrop-blur-0')}>
       <div className="container mx-auto p-2 xl:px-10 xl:py-7">
         <div className="flex items-center justify-between md:p-3 lg:gap-4 lg:px-0 xl:gap-12 2xl:gap-28">
           <div className="z-50 lg:hidden" >
@@ -80,7 +80,7 @@ const Navbar = (props) => {
         </div>
       </div>
     </header>
-    <a href='#' className={'flex items-center justify-center w-10 h-10 transition duration-400 ease-in hover:opacity-100 bg-primary rounded-full fixed right-2 bottom-2 ' + (isScrolled ? 'z-10 opacity-100' : '-z-40 opacity-0')}>
+    <a href='#' className={'duration-400 fixed bottom-2 right-2 flex h-10 w-10 items-center justify-center rounded-full bg-primary transition ease-in hover:opacity-100 ' + (isScrolled ? 'z-10 opacity-100' : '-z-40 opacity-0')}>
       <FeatherIcon icon='arrow-up' className='text-white' />
     </a>
     </>
