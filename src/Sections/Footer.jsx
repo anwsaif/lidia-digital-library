@@ -35,9 +35,9 @@ function Footer() {
       </div>
       <div className="bg-primary text-white">
         <div className="container mx-auto py-6 text-center text-xs font-bold lg:py-12 lg:text-sm">
-          <span className='mb-3 block w-full'>© 2024 Lidia. All rights reserved.</span>
-          <span>Original Design by <a target='_blank' className='mb-2 font-medium' href="https://www.figma.com/@alpi">Muhammad Alfian</a></span>
-          <span> & Coded by <a target='_blank' className='font-medium' href="https://github.com/anwsaif/">Anwar S</a></span>
+          <span className='mb-4 block w-full'>© 2024 Lidia. All rights reserved.</span>
+          <span className=' mb-2 block'>Original Design by <a target='_blank' className='font-medium' href="https://www.figma.com/@alpi">Muhammad Alfian</a></span>
+          <span>Coded by <a target='_blank' className='font-medium' href="https://github.com/anwsaif/">Anwar S</a></span>
         </div>
       </div>
     </footer>
