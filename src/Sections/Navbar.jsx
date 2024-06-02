@@ -50,10 +50,6 @@ const Navbar = (props) => {
     document.querySelector('.hamburger-react').click()
   }
 
-  const handleToTop = ()=> {
-    window.scrollTo(0,0)
-    if(isScrolled) setIsScrolled(false)
-  }
   return (
     <>
     <header className={'duration-600 fixed z-20 w-full bg-white bg-opacity-90  backdrop-blur-lg transition ease-in-out '+ (isScrolled ? 'lg:bg-white lg:bg-opacity-80 lg:backdrop-blur-lg' : 'lg:bg-transparent lg:backdrop-blur-0')}>
@@ -84,9 +80,9 @@ const Navbar = (props) => {
         </div>
       </div>
     </header>
-    <button type="button" onClick={handleToTop} className={'duration-400 fixed bottom-2 right-2 flex h-10 w-10 items-center justify-center rounded-full bg-primary transition ease-in hover:opacity-100 ' + (isScrolled ? 'z-10 opacity-100' : '-z-40 opacity-0')}>
+    <a href='#' className={'duration-400 fixed bottom-2 right-2 flex h-10 w-10 items-center justify-center rounded-full bg-primary transition ease-in hover:opacity-100 ' + (isScrolled ? 'z-10 opacity-100' : '-z-40 opacity-0')}>
       <FeatherIcon icon='arrow-up' className='text-white' />
-    </button>
+    </a>
     </>
   )
 }
