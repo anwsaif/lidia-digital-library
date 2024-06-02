@@ -9,11 +9,11 @@ function Footer() {
     <footer data-aos="fade-zoom-in" data-aos-duration="2000" className='2xl:mt-96' id='footer'>
       <div className="container mx-auto my-12 px-4 py-2 md:px-4 lg:my-[6.25rem] lg:px-5 lg:py-7 xl:px-10">
         <div className="mx-auto flex w-fit flex-wrap gap-12 lg:gap-24">
-          <div className="flex flex-col gap-4 lg:items-center lg:gap-6">
+          <div data-aos="fade-right" data-aos-duration="800" className="flex flex-col gap-4 lg:items-center lg:gap-6">
             <span className='subtitle-1 lg:text-2xl'>Managed By</span>
             <img src={logo} alt="Brand Logo" className='w-20 lg:w-auto'/>
           </div>
-          <div className="flex flex-col gap-4 lg:items-center lg:gap-14">
+          <div data-aos="fade-right" data-aos-duration="1000"  className="flex flex-col gap-4 lg:items-center lg:gap-14">
             <span className='subtitle-1 lg:text-2xl'>Social Media</span>
             <div className="flex gap-[1.125rem]">
               <a href="#">
@@ -27,16 +27,16 @@ function Footer() {
               </a>
             </div>
           </div>
-          <div className="flex flex-col gap-4 lg:items-center lg:gap-[3.75rem]">
+          <div data-aos="fade-right" data-aos-duration="1200"  className="flex flex-col gap-4 lg:items-center lg:gap-[3.75rem]">
             <span className='subtitle-1 lg:text-2xl'>Slogan</span>
             <h6>#RentFavBooks</h6>
           </div>
         </div>
       </div>
       <div className="bg-primary text-white">
-        <div className="container mx-auto text-xs font-bold lg:text-sm text-center py-6 lg:py-12">
-          <span className='block w-full mb-3'>© 2024 Lidia. All rights reserved.</span>
-          <span>Original Design by <a target='_blank' className='font-medium mb-2' href="https://www.figma.com/@alpi">Muhammad Alfian</a></span>
+        <div className="container mx-auto py-6 text-center text-xs font-bold lg:py-12 lg:text-sm">
+          <span className='mb-3 block w-full'>© 2024 Lidia. All rights reserved.</span>
+          <span>Original Design by <a target='_blank' className='mb-2 font-medium' href="https://www.figma.com/@alpi">Muhammad Alfian</a></span>
           <span> & Coded by <a target='_blank' className='font-medium' href="https://github.com/anwsaif/">Anwar S</a></span>
         </div>
       </div>
